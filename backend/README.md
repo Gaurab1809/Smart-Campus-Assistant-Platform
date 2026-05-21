@@ -1,6 +1,7 @@
 ## Overview
 #### Before continuing make sure
-1. You are on your working directory `/backend`
+1. Node version 20+
+2. You are on your working directory `/backend`
 2. run `npm install`
 #### Installed dependencies (installed automatically after npm install)
 1. express

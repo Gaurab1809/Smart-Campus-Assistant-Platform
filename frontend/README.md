@@ -1,4 +1,20 @@
-# 3. 🖥 Frontend Team
+### Overview
+
+#### Before continuing make sure
+1. Node version 20+
+2. You are on your working directory `/frontend`
+3. run `npm install`
+
+### Configurations already created
+1. TailwindCSS
+2. Axios
+3. React 19
+### Environment Variables
+Make a file named `.env` in the root folder and add properties if any examples given
+### To Run
+Go to your working directory and run `npm run dev`
+
+# 🖥 Frontend Team
 
 **Working Folder:** `/frontend/`
 
