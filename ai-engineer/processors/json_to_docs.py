@@ -1,5 +1,6 @@
 from langchain_core.documents import Document
 
+# Convert notice data into LangChain Document
 def notices_to_docs(notices):
 
     docs = []
@@ -26,6 +27,7 @@ def notices_to_docs(notices):
 
     return docs
 
+# Convert routine data into LangChain Document
 def routines_to_docs(routines):
 
     docs = []
@@ -48,34 +50,3 @@ def routines_to_docs(routines):
         )
 
     return docs
-
-def faculty_to_docs(faculty_data):
-
-    docs = []
-
-    for item in faculty_data:
-
-        text = f"""
-        Faculty Name: {item.get('name', '')}
-
-        Designation:
-        {item.get('designation', '')}
-
-        Department:
-        {item.get('department', '')}
-
-        Email:
-        {item.get('email', '')}
-        """
-
-        docs.append(
-            Document(
-                page_content=text,
-                metadata={
-                    "type": "faculty"
-                }
-            )
-        )
-
-    return docs
-
